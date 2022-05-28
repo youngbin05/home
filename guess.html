@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>숫자 맞추기</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>숫자 맞추기</h1>
+<script>
+answer = Math.floor(Math.random()*100)
+//alert(anser)
+mytry = 0
+myanswer = -1
+while ( answer != myanswer ) {
+   myanswer = parseInt(prompt("숫자 입력"))
+   if ( myanswer == answer ) {
+      alert("축하합니다." + mytry + "번째에 맞추셨습니다")
+      break
+   }
+   if ( myanswer > answer ) alert("더 적은 값을 입력하시오")
+   if ( myanswer < answer ) alert("더 큰 값을 입력하시오")
+   mytry++
+}
+</script>
+</body>
+</html>
