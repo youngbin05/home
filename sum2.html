@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>더하기 예제</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+여기 내용이 화면으로 출력됨
+<h1>안녕~</h1>
+<h2>안녕~</h2>
+<h3>안녕~</h3>
+<h4>안녕~</h4>
+<h5>안녕~</h5>
+<h6>안녕~</h6>
+<script>
+function add(a,b) {
+   c = a + b
+   return c
+}
+ab = add(2,3)
+document.write(ab + "<br>")
+cd = add(3,5)
+document.write("<h1>"+ cd + "</h1>")
+function sum(n) {
+   c = 0
+   for(i=0 ; i<=n ; i++){
+      c = c + i
+      }
+      return c
+}
+ss = sum(10)
+document.write("<h1>"+ ss + "</h1>")
+</script>
+</body>
+</html>
